@@ -51,24 +51,83 @@ class Content extends Component {
   }
   render() {
     return (
-      <div className="Content" >
-        <div>
-          <p className="title">Кому я должен</p>
-          { komuYaDolzhen.map((p, i) => {
-            return (
-              <PersonCard key={i} person={p} parentClick={this.handleClick.bind(this)} />
-            )
-          })}
+      <div className="container" >
+        <div className="sidenav">
+          <span >Категории блюд</span>
+            <a href="#">Выпечка</a>
+            <a href="#">Гарниры</a>
+            <a href="#">Горячее</a>
+            <a href="#">Десерты</a>
+            <a href="#">Детское меню</a>
+            <a href="#">Завтрак</a>
+            <a href="#">Закуски</a>
+            <a href="#">Мясное</a>
+            <a href="#">Салаты</a>
         </div>
-        <div>
-          <p className="title">Кто мне должен</p>
-          { ktoMneDolzhen.map((p, i) => {
-            return (
-              <PersonCard key={i} person={p} />
-            )
-          })}
+      <div className = "food_block">
+        <div className="row">
+          <img src="images/шашлык.jpg" className = "food_img " />
+          <div className="text">
+            <h3 className="name_food">Шашлык</h3>
+            <p>Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam.Tenetur quod quidem in voluptatem corporis dolorum dicta sit pariatur porro quaerat autem ipsam odit quam beatae tempora quibusdam illum! Modi velit odio nam nulla unde amet odit pariatur at </p> 
+            <p className="ingredients"> 
+              <span >Состав:</span> 
+              баранина, баклажан, масло растительное, перец чёрный молотый, соль, зелень, овощи
+            </p>
+            </div>
         </div>
       </div>
+      <div className = "food_block">
+        <div className="row">
+          <img src="images/lagman.jpg" className = "food_img " />
+          <div className="text">
+            <h3 className="name_food">Лагман</h3>
+            <p>Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae.Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae.Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore.Modi velit odio nam nulla unde amet odit pariatur at </p> 
+            <p className="ingredients"> 
+              <span >Состав:</span> 
+              говядина, масло растительное, картофель, лук репчатый, чеснок, перец болгарский, морковь, редька, томат-пюре, помидоры, специи, соль, бульон, мука пшеничная, яйца.	</p>
+            </div>
+        </div>
+      </div>
+      <div className = "food_block">
+        <div className="row">
+          <img src="images/plov.jpg" className = "food_img "/>
+          <div className="text">
+            <h3 className="name_food">Плов</h3>
+            <p>Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam.Tenetur quod quidem in voluptatem corporis dolorum dicta sit pariatur porro quaerat autem ipsam odit quam beatae tempora quibusdam illum! Modi velit odio nam nulla unde amet odit pariatur at </p> 
+            <p className="ingredients"> 
+              <span  >Состав:</span> 
+              говядина, баранина, рис, лук репчатый, морковь, чеснок, масло растительное						</p>
+            </div>
+        </div>
+      </div>
+      
+      <div className = "food_block">
+          <div className="row">
+            <img src="images/шашлык.jpg" className = "food_img "/>
+            <div className="text">
+              <h3 className="name_food">Шашлык</h3>
+              <p>Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam.Tenetur quod quidem in voluptatem corporis dolorum dicta sit pariatur porro quaerat autem ipsam odit quam beatae tempora quibusdam illum! Modi velit odio nam nulla unde amet odit pariatur at </p> 
+              <p className="ingredients"> 
+                <span >Состав:</span> 
+                баранина, баклажан, масло растительное, перец чёрный молотый, соль, зелень, овощи						</p>
+              </div>
+          </div>
+        </div>
+      <div className = "food_block">
+          <div className="row">
+            <img src="images/plov.jpg" className = "food_img "/>
+            <div className="text">
+              <h3 className="name_food">Плов</h3>
+              <p>Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam.Tenetur quod quidem in voluptatem corporis dolorum dicta sit pariatur porro quaerat autem ipsam odit quam beatae tempora quibusdam illum! Modi velit odio nam nulla unde amet odit pariatur at </p> 
+              <p className="ingredients"> 
+                <span  style={{ fontWeight: 'bold'}}>Состав:</span> 
+                говядина, баранина, рис, лук репчатый, морковь, чеснок, масло растительное
+              </p>
+              </div>
+          </div>
+        </div>
+    </div>
     );
   }
 }
